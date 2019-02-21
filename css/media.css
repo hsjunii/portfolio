@@ -1,0 +1,225 @@
+/* media.css */
+@media (max-width: 767px) {
+    header {
+        padding-top: calc(4000/3000*100%);
+        background-position: 2% 0;
+    }
+
+    header .logo h2 {
+        display: none;
+    }
+
+    .title_text {
+        position: absolute;
+        top: 30%;
+        left: 12%;
+    }
+
+    .title_text h2 {
+        font-size: 6vw;
+        text-indent: 1.5%;
+        color: #111;
+        width: 150%;
+    }
+
+    .title_text h3 {
+        font-size: 14vw;
+        color: #111;
+    }
+
+    #about .hide_skill {
+        transform: translateX(0);
+        width: 52%;
+        top: 61%;
+        right: 4%;
+    }
+
+    #about .hide_skill h3 {
+        font-size: 5vw;
+
+    }
+
+    .port_view {
+        position: absolute;
+        top: 70%;
+        left: 35%;
+        width: 40%;
+    }
+
+    .portA_btn {
+        padding: 5% 15%;
+        border: 1px solid #000;
+        color: #111;
+        font-size: 4vw;
+        text-decoration: none !important;
+        transition: 0.5s;
+    }
+
+    .portA_btn:hover {
+        background: #000;
+        color: #eee;
+    }
+
+    #nav-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        z-index: 5;
+    }
+
+    #nav-btn a {
+        font-size: 24px;
+        color: rgb(39, 39, 39);
+    }
+
+    .nav-bg .depth1 {
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        right: 0 !important;
+        width: 100px;
+        background: rgb(255, 221, 205);
+        padding-top: 80px;
+        height: 100%;
+        z-index: 1;
+        transform: translateX(150px);
+        transition: all 0.5s;
+        text-align: left;
+        opacity: 1;
+    }
+
+    .nav-bg .depth1.show {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .nav-bg .depth1 li {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+
+    .nav-bg .depth1 li a {
+        color: #333;
+    }
+
+    figure.snip1283 figcaption {
+        position: absolute;
+        top: 20px;
+    }
+
+    figure.snip1283 h3 {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    figure.snip1283 .read-more {
+        padding: 4px;
+    }
+
+    figure.snip1283 p {
+        margin-bottom: 35px !important;
+    }
+
+    #portfolio .categories {
+        display: none;
+    }
+}
+
+/* 중간크기이상 사이즈 ~ pc */
+@media (min-width: 768px) {
+    header .logo h1 {
+        padding-right: 12%;
+    }
+
+    .title_text {
+        position: absolute;
+        top: 40%;
+        left: 6%;
+    }
+
+    .title_text h2 {
+        font-size: 2vw;
+        text-indent: 1.5%;
+        color: #111;
+    }
+
+    .title_text h3 {
+        font-size: 5.5vw;
+        color: #111;
+    }
+
+    .port_view {
+        position: absolute;
+        top: 70%;
+        left: 14%;
+        width: 40%;
+        height: 8%;
+        padding: 1% 0;
+    }
+
+    .portA_btn {
+        padding: 2% 10%;
+        border: 1px solid #000;
+        color: #111;
+        font-size: 1.2vw;
+        text-decoration: none !important;
+        transition: 0.5s;
+    }
+
+    .portA_btn:hover {
+        background: #000;
+        color: #eee;
+    }
+
+    .title_text,
+    .port_view {
+        opacity: 0;
+        animation-name: title;
+        animation-delay: 0.5s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes title {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    #nav-btn {
+        display: none;
+    }
+
+    .depth1 {
+        text-align: center;
+        display: block;
+        position: absolute;
+        top: 33%;
+        left: 48%;
+        width: 30%;
+    }
+
+    .depth1 li {
+        display: inline-block;
+    }
+
+    .depth1 li:nth-child(2) {
+        display: inline-block;
+        margin: 0 18%;
+    }
+
+    .depth1 li a {
+        color: #eee;
+        font-size: 1.1vw;
+    }
+
+}

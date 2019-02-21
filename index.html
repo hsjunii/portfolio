@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio DongHo_Kim</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon">
+    <link href="images/favicon.png" rel="apple-touch-icon">
+
+    <!-- 부트스트랩 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/6.0.2/typeit.min.js" type="text/javascript"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <!-- isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- imgload -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Font (noto sansKR, Roboto, Abril Fatface -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <!-- header logo animation css-->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- fancyBox -->
+    <script src="lib/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="lib/jquery.fancybox.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+    <!-- 사용자 CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="container-fluid" id="headerTop">
+        <div class="logo">
+            <h2 class="type" data-text='Hi~. Im DongHo Kim．.  Welcome to. My Portfolio．．．'></h2>
+        </div>
+        <div>
+            <div class="title_text">
+                <h2>Dongho Kim's</h2>
+                <h3>PORTFOLIO</h3>
+            </div>
+            <div class="port_view">
+                <a href="#portfolio" class="portA_btn">작품 보러가기</a>
+            </div>
+            <nav class="nav-bg">
+                <div id="nav-btn">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+                <ul class="depth1">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- 어바웃 -->
+    <section id="about" class="container-fluid">
+        <article class="container">
+            <div class="row">
+                <div class="col-md-12 about_me">
+                    <h2>About Me</h2>
+                    <p class="h1_line"></p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 profile_img mb-3">
+                        <img src="images/r-profile.jpg" alt="프로필 이미지">
+                    </div>
+                    <div class="col-md-6 skill">
+                        <h3>
+                            <img src="images/profilecard.png" alt="프로필 카드 이미지">
+                        </h3>
+                        <button class="skl_btn">Skills</button>
+                    </div>
+                    <div class="hide_skill">
+                        <h3>Skills</h3>
+                        <label>Photoshop / Illustrator</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated
+                    bg-warning"
+                                role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+                        </div>
+                        <label>Html3 / css</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated
+                        bg-success"
+                                role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+                        </div>
+                        <label>Javscript / j-Query</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated
+                        bg-danger"
+                                role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                        </div>
+                        <label>Excel / Powerpoint / 한글</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated
+                        bg-info"
+                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- 포트폴리오 -->
+    <section id="portfolio" class="container-fluid">
+        <div class="container">
+            <div class="section-title text-center center">
+                <h2>Portfolio</h2>
+                <p class="h1_line"></p>
+            </div>
+            <div class="categories">
+                <ul>
+                    <li>
+                        <a href="#" id="all">All</a>
+                    </li>
+                    <li>
+                        <a href="#" id="renewal">Webpage Renewal</a>
+                    </li>
+                    <li>
+                        <a href="#" id="graphic">Graphic Design</a>
+                    </li>
+                    <li>
+                        <a href="#" id="app">App Design</a>
+                    </li>
+                    <li>
+                        <a href="#" id="icon">Icon</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row grid port_img">
+                <div class="col-md-3 renewal grid-item">
+                    <figure class="snip1283">
+                        <img src="images/r-jaws.png" alt="죠스떡볶이 썸네일">
+                        <figcaption>
+                            <h3>HomePage Renewal</h3>
+                            <p>jaws Food's Homepage Renewal<br>Team Project</p>
+                            <a href="http://hsjunii.dothome.co.kr/jaws/index.html" target="_blank" class="read-more">작품
+                                보러가기</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 renewal grid-item">
+                    <figure class="snip1283">
+                        <img src="images/r-fringe.png" alt="가장자리펜션 썸네일">
+                        <figcaption>
+                            <h3>HomePage Renewal</h3>
+                            <p>Fringe Pension's Homepage Renewal<br>Team Project</p>
+                            <a href="http://hsjunii.dothome.co.kr/fringe/index.html" target="_blank" class="read-more">작품
+                                보러가기</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 graphic grid-item">
+                    <figure class="works_img">
+                        <img src="images/r-pascucci.png" alt="파스쿠치 메인페이지 썸네일">
+                        <figcaption>
+                            <div>
+                                <p>Brand Design</p>
+                            </div>
+                        </figcaption>
+                        <a data-fancybox="gallery" data-caption="Passcucci brand Mainpage Degisn" href="images/pascucci.png"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3 graphic grid-item">
+                    <figure class="works_img">
+                        <img src="images/r-poster.png" alt="김건모 콘서트 포스터 썸네일">
+                        <figcaption>
+                            <div>
+                                <p>Poster Design</p>
+                            </div>
+                        </figcaption>
+                        <a data-fancybox="gallery" data-caption="Kimgunmo concert Poster Design" href="images/poster.png"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3 graphic grid-item">
+                    <figure class="works_img">
+                        <img src="images/r-soju.png" alt="11번가 참이슬, 웨스트우드 배너 썸네일">
+                        <figcaption>
+                            <div>
+                                <p>Banner Design</p>
+                            </div>
+                        </figcaption>
+                        <a data-fancybox="gallery" data-caption="11번가 참이슬, 웨스트우드 Banner Design" href="images/soju.png"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3 graphic grid-item">
+                    <figure class="works_img">
+                        <img src="images/r-ibk.png" alt="ibk은행 배너 썸네일">
+                        <figcaption>
+                            <div>
+                                <p>Banner Design</p>
+                            </div>
+                        </figcaption>
+                        <a data-fancybox="gallery" data-caption="ibk은행 Banner Design" href="images/ibk.png"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3 app grid-item">
+                    <figure class="works_img">
+                        <img src="images/r-carpool.png" alt="카풀  앱 썸네일">
+                        <figcaption>
+                            <div>
+                                <p>Carpool App Design</p>
+                            </div>
+                        </figcaption>
+                        <a data-fancybox="gallery" data-caption="Carpool App Design" href="images/carpool.png"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3 app grid-item">
+                    <figure class="works_img">
+                        <img src="images/r-weather.png" alt="날씨 앱 썸네일">
+                        <figcaption>
+                            <div>
+                                <p>Weather App Design</p>
+                            </div>
+                        </figcaption>
+                        <a data-fancybox="gallery" data-caption="Wether App Design" href="images/weather.png"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3 graphic grid-item">
+                    <figure class="works_img">
+                        <img src="images/r-card_ui.png" alt="카드 UI 썸네일">
+                        <figcaption>
+                            <div>
+                                <p>Card-UI Design</p>
+                            </div>
+                        </figcaption>
+                        <a data-fancybox="gallery" data-caption="Card UI Design" href="images/card_ui.png"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3 graphic grid-item">
+                    <figure class="works_img">
+                        <img src="images/r-namecard.png" alt="네임카드 썸네일">
+                        <figcaption>
+                            <div>
+                                <p>Card-UI Design</p>
+                            </div>
+                        </figcaption>
+                        <a data-fancybox="gallery" data-caption="NameCard Design" href="images/namecard.png"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3 icon grid-item">
+                    <figure class="works_img">
+                        <img src="images/r-icon.png" alt="날씨 아이콘 썸네일">
+                        <figcaption>
+                            <div>
+                                <p>Icon Design</p>
+                            </div>
+                        </figcaption>
+                        <a data-fancybox="gallery" data-caption="Weather Icon Design" href="images/icon.png"></a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 컨택트 -->
+    <section id="contact" class="container-fluid">
+        <div class="col-md-12">
+            <h2>Contact Me</h2>
+            <p class="h1_line"></p>
+
+            <div class="container">
+                <div class="row ctboxgroup">
+                    <div class="col-md-4 ctbox mb-4">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>ADDRESS</p>
+                            <p class="ct_line"></p>
+                            <a href="https://goo.gl/maps/CTrKiBaGqqk">
+                                <p>서울시 양천구 거주</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ctbox ms-3 mb-4">
+                        <div>
+                            <i class="fas fa-mobile-alt"></i>
+                            <p>PHONE</p>
+                            <p class="ct_line"></p>
+                            <a href="tel:010-4090-5150">
+                                <p>010.4090.5150</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ctbox mb-4">
+                        <div>
+                            <i class="fas fa-paper-plane"></i>
+                            <p>E-MAIL</p>
+                            <p class="ct_line"></p>
+                            <a href="mailto:hsjunii@naver.com">
+                                <p>hsjunii@naver.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#headerTop" class="iconTop">
+            <i class="fas fa-angle-double-up"></i></a>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="container-fluid">
+        <div class="container">
+            <p>Copyright &copy; 2019 <span>Dongho Kim</span></p>
+
+            <!-- kakao 공유버튼 -->
+            <span id="kakaostory-share-button" data-url="내홈페이지주소">
+            </span>
+
+            <!-- 네이버 공유버튼 -->
+            <span>
+                <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
+                <script type="text/javascript">
+                    new ShareNaver.makeButton({
+                        "type": "c"
+                    });
+                </script>
+            </span>
+        </div>
+    </footer>
+
+    <!-- 사용자 자바 스크립트 -->
+    <!-- main.js-->
+    <script src="js/main.js"></script>
+
+    <!-- sns api -->
+    <script src="js/api.js"></script>
+
+</body>
+
+</html>
