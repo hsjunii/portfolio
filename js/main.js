@@ -2,13 +2,23 @@
 $('.categories ul li a').on('click', function () {
   return false;
 });
-$('#container').imagesLoaded(function () {
-  $('.grid').isotope({
-    itemSelector: '.grid-item',
-    layoutMode: 'fitRows',
-    filter: '*'
-  });
-});
+
+var agent = navigator.userAgent.toLowerCase(); 
+
+if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) { 
+  console.log('ㅠㅠ');
+}
+else {
+  // $('#container').imagesLoaded(function () {
+  //   // $('.grid').isotope({
+  //   //   itemSelector: '.grid-item',
+  //   //   layoutMode: 'fitRows',
+  //   //   filter: '*'      
+  //   // })
+  // });
+  console.log("ex");
+}
+
 
 // isotope 
 $('#all').click(function () {
@@ -74,32 +84,33 @@ $(window).scroll(function () {
 })
 
 // 스크롤 opacity 효과
-  // About 내용들 (스크롤 800에서 fade)
-$(document).ready(function () {
-  $(window).scroll(function () {
-    $('.profile_img, .skill').each(function (i) {      
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-      if (bottom_of_window > 800) {
-        $(this).animate({
-          'opacity': '1'
-        }, 1500);
-      }
-    });
-  });
-});
-  // Portfolio 이미지내용들 (스크롤 1500에서 fade)
-$(document).ready(function () {
-  $(window).scroll(function () {
-    $('.port_img').each(function (i) {
-      var bottom_of_window1 = $(window).scrollTop() + $(window).height();
-      if (bottom_of_window1 > 1500) {
-        $(this).animate({
-          'opacity': '1'
-        }, 2000);
-      }
-    });
-  });
-});
+// About 내용들 (스크롤 800에서 fade)
+// $(document).ready(function () {
+//   $(window).scroll(function () {
+//     $('.profile_img, .skill').each(function (i) {
+//       var bottom_of_window = $(window).scrollTop() + $(window).height();
+//       if (bottom_of_window > 800) {
+//         $(this).animate({
+//           'opacity': '1'
+//         }, 1500);
+//       }      
+//     });
+//     $('.port_img').each(function (i) {
+//       var bottom_of_window1 = $(window).scrollTop() + $(window).height();
+//       if (bottom_of_window1 > 1500) {
+//         $(this).animate({
+//           'opacity': '1'
+//         }, 2000);
+//       }
+//     });
+//   });
+// });
+// Portfolio 이미지내용들 (스크롤 1500에서 fade)
+// $(document).ready(function () {
+//   $(window).scroll(function () {
+    
+//   });
+// });
 
 // auto type
 $(function () {
