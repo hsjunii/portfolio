@@ -1,5 +1,6 @@
 /* media.css */
 @media (max-width: 767px) {
+    /* header */
     header {
         padding-top: calc(4000/3000*100%);
         background-position: 2% 0;
@@ -19,24 +20,12 @@
         font-size: 6vw;
         text-indent: 1.5%;
         color: #111;
-        width: 150%;
+        width: 60%;
     }
 
     .title_text h3 {
         font-size: 14vw;
         color: #111;
-    }
-
-    #about .hide_skill {
-        transform: translateX(0);
-        width: 52%;
-        top: 61%;
-        right: 4%;
-    }
-
-    #about .hide_skill h3 {
-        font-size: 5vw;
-
     }
 
     .port_view {
@@ -60,6 +49,29 @@
         color: #eee;
     }
 
+    /* about */
+    #about .hide_skill {
+        transform: translateX(0);
+        width: 52%;
+        top: 62%;
+        right: 4%;
+    }
+    #about .hide_skill h3 {
+        font-size: 4vw;
+        margin-bottom: 2px;
+    }
+    #about .skill .skl_btn {
+        font-size: 4vw;
+        padding: 1% 5%;
+        line-height: 15px;        
+    }
+    #about .hide_skill label {
+        margin-bottom: 0.5%;
+        margin-top: 4%;
+        margin-left: 10%;
+        font-size: 2vw;
+    }
+    
     #nav-btn {
         display: block;
         position: absolute;
@@ -76,18 +88,19 @@
     .nav-bg .depth1 {
         padding: 0;
         margin: 0;
-        position: fixed;
+        position: absolute;
         top: 0;
-        right: 0 !important;
+        right: 0;
         width: 100px;
         background: rgb(255, 221, 205);
         padding-top: 80px;
         height: 100%;
         z-index: 1;
-        transform: translateX(150px);
+        transform: translateX(110px);
         transition: all 0.5s;
         text-align: left;
-        opacity: 1;
+        opacity: 0;
+        
     }
 
     .nav-bg .depth1.show {
@@ -107,6 +120,12 @@
         color: #333;
     }
 
+    
+    #portfolio .categories {
+        display: none;
+    }
+    
+    /* 포트폴리오 이미지 1-2번 효과 */
     figure.snip1283 figcaption {
         position: absolute;
         top: 20px;
@@ -123,10 +142,6 @@
 
     figure.snip1283 p {
         margin-bottom: 35px !important;
-    }
-
-    #portfolio .categories {
-        display: none;
     }
 }
 

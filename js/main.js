@@ -1,52 +1,3 @@
-// 메뉴 토글
-$("#nav-btn").click(function () {
-  $(".depth1").toggleClass("show");
-});
-$(window).scroll(function () {
-  var st = $(window).scrollTop();
-  if (st > 50) {
-    $('.depth1').removeClass('show')
-  }
-})
-
-// skills btn
-$(".skl_btn").click(function () {
-  $(".hide_skill").toggleClass("look");
-});
-$(window).scroll(function () {
-  var vt = $(window).scrollTop();
-  if (vt > 50) {
-    $('.hide_skill').removeClass('look')
-  }
-})
-
-// 스크롤 opacity 효과
-$(document).ready(function () {
-  $(window).scroll(function () {
-    $('.profile_img, .skill').each(function (i) {
-      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-      if (bottom_of_window > bottom_of_object / 2) {
-        $(this).animate({
-          'opacity': '1'
-        }, 1500);
-      }
-    });
-  });
-});
-$(document).ready(function () {
-  $(window).scroll(function () {
-    $('.port_img').each(function (i) {
-      var bottom_of_window1 = $(window).scrollTop() + $(window).height();
-      if (bottom_of_window1 > 1500) {
-        $(this).animate({
-          'opacity': '1'
-        }, 2000);
-      }
-    });
-  });
-});
-
 // 이미지로드 & isotope
 $('.categories ul li a').on('click', function () {
   return false;
@@ -100,6 +51,56 @@ $('#icon').click(function () {
   });
 })
 
+// 메뉴 토글
+$("#nav-btn").click(function () {
+  $(".depth1").toggleClass("show");
+});
+$(window).scroll(function () {
+  var st = $(window).scrollTop();
+  if (st > 50) {
+    $('.depth1').removeClass('show')
+  }
+})
+
+// skills btn
+$(".skl_btn").click(function () {
+  $(".hide_skill").toggleClass("look");
+});
+$(window).scroll(function () {
+  var vt = $(window).scrollTop();
+  if (vt > 50) {
+    $('.hide_skill').removeClass('look')
+  }
+})
+
+// 스크롤 opacity 효과
+  // About 내용들 (스크롤 800에서 fade)
+$(document).ready(function () {
+  $(window).scroll(function () {
+    $('.profile_img, .skill').each(function (i) {      
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+      if (bottom_of_window > 800) {
+        $(this).animate({
+          'opacity': '1'
+        }, 1500);
+      }
+    });
+  });
+});
+  // Portfolio 이미지내용들 (스크롤 1500에서 fade)
+$(document).ready(function () {
+  $(window).scroll(function () {
+    $('.port_img').each(function (i) {
+      var bottom_of_window1 = $(window).scrollTop() + $(window).height();
+      if (bottom_of_window1 > 1500) {
+        $(this).animate({
+          'opacity': '1'
+        }, 2000);
+      }
+    });
+  });
+});
+
 // auto type
 $(function () {
   var h2 = document.querySelector('.type');
@@ -147,7 +148,7 @@ $('[data-fancybox]').fancybox({
   loop: true
 });
 
-// portfolio img remove
+// portfolio img 효과의 호버클래스 remove
 $(".hover").mouseleave(
   function () {
     $(this).removeClass("hover");

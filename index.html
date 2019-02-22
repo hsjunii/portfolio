@@ -36,9 +36,6 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 
-    <!-- header logo animation css-->
-    <link rel="stylesheet" href="css/animate.min.css">
-
     <!-- fancyBox -->
     <script src="lib/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="lib/jquery.fancybox.min.css">
@@ -53,32 +50,31 @@
 
 </head>
 
-<body>
+<body id="portfolio_1">
     <!-- 헤더 -->
-    <header class="container-fluid" id="headerTop">
+    <header class="container-fluid">
         <div class="logo">
             <h2 class="type" data-text='Hi~. Im DongHo Kim．.  Welcome to. My Portfolio．．．'></h2>
         </div>
-        <div>
-            <div class="title_text">
-                <h2>Dongho Kim's</h2>
-                <h3>PORTFOLIO</h3>
+        <div class="title_text">
+            <h2>Dongho Kim's</h2>
+            <h3>PORTFOLIO</h3>
+        </div>
+        <div class="port_view">
+            <a href="#portfolio" class="portA_btn">작품 보러가기</a>
+        </div>
+        <nav class="nav-bg">
+            <div id="nav-btn">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
             </div>
-            <div class="port_view">
-                <a href="#portfolio" class="portA_btn">작품 보러가기</a>
-            </div>
-            <nav class="nav-bg">
-                <div id="nav-btn">
-                    <a href="#">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </div>
-                <ul class="depth1">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <ul class="depth1">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- 어바웃 -->
@@ -183,100 +179,100 @@
                 <div class="col-md-3 graphic grid-item">
                     <figure class="works_img">
                         <img src="images/r-pascucci.png" alt="파스쿠치 메인페이지 썸네일">
-                        <figcaption>
-                            <div>
-                                <p>Brand Design</p>
-                            </div>
-                        </figcaption>
                         <a data-fancybox="gallery" data-caption="Passcucci brand Mainpage Degisn" href="images/pascucci.png"></a>
+                            <figcaption>
+                                <div>
+                                    <p>Brand Design</p>
+                                </div>
+                            </figcaption>
                     </figure>
                 </div>
                 <div class="col-md-3 graphic grid-item">
                     <figure class="works_img">
                         <img src="images/r-poster.png" alt="김건모 콘서트 포스터 썸네일">
-                        <figcaption>
-                            <div>
-                                <p>Poster Design</p>
-                            </div>
-                        </figcaption>
                         <a data-fancybox="gallery" data-caption="Kimgunmo concert Poster Design" href="images/poster.png"></a>
+                            <figcaption>
+                                <div>
+                                    <p>Poster Design</p>
+                                </div>
+                            </figcaption>
                     </figure>
                 </div>
                 <div class="col-md-3 graphic grid-item">
                     <figure class="works_img">
                         <img src="images/r-soju.png" alt="11번가 참이슬, 웨스트우드 배너 썸네일">
-                        <figcaption>
-                            <div>
-                                <p>Banner Design</p>
-                            </div>
-                        </figcaption>
                         <a data-fancybox="gallery" data-caption="11번가 참이슬, 웨스트우드 Banner Design" href="images/soju.png"></a>
+                            <figcaption>
+                                <div>
+                                    <p>Banner Design</p>
+                                </div>
+                            </figcaption>
                     </figure>
                 </div>
                 <div class="col-md-3 graphic grid-item">
                     <figure class="works_img">
                         <img src="images/r-ibk.png" alt="ibk은행 배너 썸네일">
-                        <figcaption>
-                            <div>
-                                <p>Banner Design</p>
-                            </div>
-                        </figcaption>
                         <a data-fancybox="gallery" data-caption="ibk은행 Banner Design" href="images/ibk.png"></a>
+                            <figcaption>
+                                <div>
+                                    <p>Banner Design</p>
+                                </div>
+                            </figcaption>
                     </figure>
                 </div>
                 <div class="col-md-3 app grid-item">
                     <figure class="works_img">
                         <img src="images/r-carpool.png" alt="카풀  앱 썸네일">
-                        <figcaption>
-                            <div>
-                                <p>Carpool App Design</p>
-                            </div>
-                        </figcaption>
                         <a data-fancybox="gallery" data-caption="Carpool App Design" href="images/carpool.png"></a>
+                            <figcaption>
+                                <div>
+                                    <p>Carpool App Design</p>
+                                </div>
+                            </figcaption>
                     </figure>
                 </div>
                 <div class="col-md-3 app grid-item">
                     <figure class="works_img">
                         <img src="images/r-weather.png" alt="날씨 앱 썸네일">
-                        <figcaption>
-                            <div>
-                                <p>Weather App Design</p>
-                            </div>
-                        </figcaption>
-                        <a data-fancybox="gallery" data-caption="Wether App Design" href="images/weather.png"></a>
+                        <a data-fancybox="gallery" data-caption="Wether App Design" href="images/weather.png"> </a>
+                            <figcaption>
+                                <div>
+                                    <p>Weather App Design</p>
+                                </div>
+                            </figcaption>
                     </figure>
                 </div>
                 <div class="col-md-3 graphic grid-item">
                     <figure class="works_img">
                         <img src="images/r-card_ui.png" alt="카드 UI 썸네일">
-                        <figcaption>
-                            <div>
-                                <p>Card-UI Design</p>
-                            </div>
-                        </figcaption>
-                        <a data-fancybox="gallery" data-caption="Card UI Design" href="images/card_ui.png"></a>
+                        <a data-fancybox="gallery" data-caption="Card UI Design" href="images/card_ui.png"> </a>
+                            <figcaption>
+                                <div>
+                                    <p>Card-UI Design</p>
+                                </div>
+                            </figcaption>
                     </figure>
                 </div>
                 <div class="col-md-3 graphic grid-item">
                     <figure class="works_img">
                         <img src="images/r-namecard.png" alt="네임카드 썸네일">
-                        <figcaption>
-                            <div>
-                                <p>Card-UI Design</p>
-                            </div>
-                        </figcaption>
                         <a data-fancybox="gallery" data-caption="NameCard Design" href="images/namecard.png"></a>
+                            <figcaption>
+                                <div>
+                                    <p>Card-UI Design</p>
+                                </div>
+                            </figcaption>
                     </figure>
                 </div>
                 <div class="col-md-3 icon grid-item">
                     <figure class="works_img">
                         <img src="images/r-icon.png" alt="날씨 아이콘 썸네일">
-                        <figcaption>
-                            <div>
-                                <p>Icon Design</p>
-                            </div>
-                        </figcaption>
-                        <a data-fancybox="gallery" data-caption="Weather Icon Design" href="images/icon.png"></a>
+                        <a data-fancybox="gallery" data-caption="Weather Icon Design" href="images/icon.png"> </a>
+                            <figcaption>
+                                <div>
+                                    <p>Icon Design</p>
+                                </div>
+                            </figcaption>     
                     </figure>
                 </div>
             </div>
@@ -324,7 +320,7 @@
                 </div>
             </div>
         </div>
-        <a href="#headerTop" class="iconTop">
+        <a href="#portfolio_1" class="iconTop">
             <i class="fas fa-angle-double-up"></i></a>
     </section>
 
