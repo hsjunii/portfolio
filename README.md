@@ -6,3 +6,4 @@ DongHo Kim's Portfolio
  2. 익스플로러로 접속시 
     -로딩지연 
     - javscript에서 scroll fade가 2개인데 뒤에것만 인식함.
+    - auto type text(javascript) 인식 못함.
