@@ -7,3 +7,7 @@ DongHo Kim's Portfolio
     -로딩지연 
     - javscript에서 scroll fade가 2개인데 뒤에것만 인식함.
     - auto type text(javascript) 인식 못함.
+2019.02.22 14:25 3차 수정
+ - fancybox 수정 안됨
+ - 익스플로러 로딩지연 api로 확인(없앰)
+ - auto type 인식 
