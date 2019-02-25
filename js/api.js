@@ -18,7 +18,7 @@ window.kakaoAsyncInit = function () {
 
 // 네이버
 function share() {
-  var myurl = 'https://hsjunii.dothome.co.kr/fringe';
+  var myurl = 'https://hsjunii.github.io/portfolio/';
   var url = encodeURI(encodeURIComponent(myurl));
   var title = encodeURI(myform.title.value);
   var shareURL = "https://share.naver.com/web/shareView.nhn?url=" + url + "&title=" + title;
