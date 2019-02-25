@@ -11,7 +11,7 @@ DongHo Kim's Portfolio
  - isotope 수정 안됨
  - 익스플로러 로딩지연 
  - auto type 인식 
-2019.02.25
+ 2019.02.25 14:25 4차 
  - isotope imagesloaded로 수정
  - 카카오톡,네이버 api로 밝혀짐 (익스플로러에서만 지원안되고 로딩지연)
  - auto type 익스플로러 
