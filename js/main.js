@@ -112,6 +112,22 @@ $('.depth1 li a, #contact .iconTop, .portA_btn').on('click', function () {
   return false;
 })
 
+// 스크롤 페이드 효과
+$(window).scroll(function() {
+  $('.profile_img, .skill').each(function (i) {
+    var bottom_of_window = $(window).scrollTop() + $(window).height();
+    if (bottom_of_window > 1000) {
+      $(this).css({'opacity':'1'})
+    }
+  })  
+  $('.port_img').each(function (i) {
+    var bottom_of_window1 = $(window).scrollTop() + $(window).height();
+    if (bottom_of_window1 > 2000) {
+      $(this).css({'opacity':'1'})
+    }
+  })  
+})
+
 // fancybox
 $('[data-fancybox]').fancybox({
   selector: '[data-fancybox="gallery"]',

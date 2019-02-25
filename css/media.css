@@ -14,6 +14,7 @@
         position: absolute;
         top: 30%;
         left: 12%;
+        height: 50%;        
     }
 
     .title_text h2 {
@@ -27,23 +28,18 @@
         font-size: 14vw;
         color: #111;
     }
-
-    .port_view {
+      
+    .portA_btn {
         position: absolute;
         top: 70%;
-        left: 35%;
-        width: 40%;
-    }
-
-    .portA_btn {
-        padding: 5% 15%;
+        left: 27%;
+        padding: 2% 7%;
         border: 1px solid #000;
         color: #111;
         font-size: 4vw;
         text-decoration: none !important;
         transition: 0.5s;
     }
-
     .portA_btn:hover {
         background: #000;
         color: #eee;
@@ -155,6 +151,7 @@
         position: absolute;
         top: 40%;
         left: 6%;
+        height: 50%;
     }
 
     .title_text h2 {
@@ -166,19 +163,13 @@
     .title_text h3 {
         font-size: 5.5vw;
         color: #111;
-    }
-
-    .port_view {
-        position: absolute;
-        top: 70%;
-        left: 14%;
-        width: 40%;
-        height: 8%;
-        padding: 1% 0;
-    }
+    }    
 
     .portA_btn {
-        padding: 2% 10%;
+        position: absolute;
+        top: 70%;
+        left: 30%;  
+        padding: 1% 4%;      
         border: 1px solid #000;
         color: #111;
         font-size: 1.2vw;
@@ -189,26 +180,7 @@
     .portA_btn:hover {
         background: #000;
         color: #eee;
-    }
-
-    .title_text,
-    .port_view {
-        opacity: 0;
-        animation-name: title;
-        animation-delay: 0.5s;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes title {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
+    } 
 
     #nav-btn {
         display: none;

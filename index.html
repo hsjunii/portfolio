@@ -8,7 +8,7 @@
     <title>Portfolio DongHo_Kim</title>
 
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
 
     <!-- favicon -->
     <link href="images/favicon.png" rel="icon">
@@ -25,24 +25,19 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
-    <!-- Font (noto sansKR, Roboto, Abril Fatface -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-
-    <!-- imgload
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script> -->
-
     <!-- isotope -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-    <!-- fancyBox -->
+    <!-- imgload -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>    
+
+    <!-- fancyBox --> 
     <script src="lib/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="lib/jquery.fancybox.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
 
     <!-- 사용자 CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -59,10 +54,9 @@
         <div class="title_text">
             <h2>Dongho Kim's</h2>
             <h3>PORTFOLIO</h3>
-        </div>
-        <div class="port_view">
             <a href="#portfolio" class="portA_btn">작품 보러가기</a>
         </div>
+
         <nav class="nav-bg">
             <div id="nav-btn">
                 <a href="#">
@@ -85,42 +79,40 @@
                     <h2>About Me</h2>
                     <p class="h1_line"></p>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 profile_img mb-3">
-                        <img src="images/r-profile.jpg" alt="프로필 이미지">
+                <div class="col-md-6 profile_img mb-3">
+                    <img src="images/r-profile.jpg" alt="프로필 이미지">
+                </div>
+                <div class="col-md-6 skill">
+                    <h3>
+                        <img src="images/profilecard.png" alt="프로필 카드 이미지">
+                    </h3>
+                    <button class="skl_btn">Skills</button>
+                </div>
+                <div class="hide_skill">
+                    <h3>Skills</h3>
+                    <label>Photoshop / Illustrator</label>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated
+                bg-warning"
+                            role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
                     </div>
-                    <div class="col-md-6 skill">
-                        <h3>
-                            <img src="images/profilecard.png" alt="프로필 카드 이미지">
-                        </h3>
-                        <button class="skl_btn">Skills</button>
+                    <label>Html3 / css</label>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated
+                    bg-success"
+                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
                     </div>
-                    <div class="hide_skill">
-                        <h3>Skills</h3>
-                        <label>Photoshop / Illustrator</label>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated
-                    bg-warning"
-                                role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
-                        </div>
-                        <label>Html3 / css</label>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated
-                        bg-success"
-                                role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                        </div>
-                        <label>Javscript / j-Query</label>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated
-                        bg-danger"
-                                role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-                        </div>
-                        <label>Excel / Powerpoint / 한글</label>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated
-                        bg-info"
-                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                        </div>
+                    <label>Javscript / j-Query</label>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated
+                    bg-danger"
+                            role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                    </div>
+                    <label>Excel / Powerpoint / 한글</label>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated
+                    bg-info"
+                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                     </div>
                 </div>
             </div>
@@ -137,19 +129,20 @@
             <div class="categories">
                 <ul>
                     <li>
-                        <a href="#" id="all">All</a>
+                        <button id="all">All</button>
+
                     </li>
                     <li>
-                        <a href="#" id="renewal">Webpage Renewal</a>
+                        <button id="renewal">Webpage Renewal</button>
                     </li>
                     <li>
-                        <a href="#" id="graphic">Graphic Design</a>
+                        <button id="graphic">Graphic Design</button>
                     </li>
                     <li>
-                        <a href="#" id="app">App Design</a>
+                        <button id="app">App Design</button>
                     </li>
                     <li>
-                        <a href="#" id="icon">Icon</a>
+                        <button id="icon">Icon</button>
                     </li>
                 </ul>
             </div>
@@ -328,20 +321,18 @@
     <footer class="container-fluid">
         <div class="container">
             <p>Copyright &copy; 2019 <span>Dongho Kim</span></p>
-
             <!-- kakao 공유버튼 -->
-            <span id="kakaostory-share-button" data-url="내홈페이지주소">
-            </span>
+            <span id="kakaostory-share-button" data-url="https://hsjunii.github.io/portfolio/"></span>
 
             <!-- 네이버 공유버튼 -->
             <span>
-                <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
-                <script type="text/javascript">
-                    new ShareNaver.makeButton({
+                    <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
+                    <script type="text/javascript">
+                      new ShareNaver.makeButton({
                         "type": "c"
-                    });
-                </script>
-            </span>
+                      });
+                    </script>
+                  </span>
         </div>
     </footer>
 
