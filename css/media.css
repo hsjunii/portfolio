@@ -142,7 +142,7 @@
 }
 
 /* 중간크기이상 사이즈 ~ pc */
-@media (min-width: 768px) {
+@media (min-width: 768px){
     header .logo h1 {
         padding-right: 12%;
     }
